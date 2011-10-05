@@ -1,0 +1,154 @@
+TFase 2
+v7
+r0
+t338152974.780956
+cCheck dependencies
+cProcessInfoPlistFile "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/Info.plist" "Fase 2-Info.plist"
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o" "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o" "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+
+N/System/Library/Frameworks/GLUT.framework/GLUT
+c000000004E27C97B0000000000105760
+t1311230331
+s1070944
+
+N/System/Library/Frameworks/GLUT.framework/Headers/glut.h
+c000000004DFA9473000000000000578C
+t1308267635
+s22412
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004E27C8D6000000000002D2A0
+t1311230166
+s184992
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp
+c000000004E765CCE0000000000000338
+t1316379854
+s824
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Matarial.h"
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.h
+c000000004E765CC800000000000002AC
+t1316379848
+s684
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp
+c000000004E77968C00000000000001B0
+t1316460172
+s432
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.h
+c000000004E7660EE000000000000022A
+t1316380910
+s554
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Matarial.h"
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app
+t2
+s0
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/Info.plist
+t1316460172
+s829
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/MacOS/Fase 2
+t2
+s0
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/PkgInfo
+t1316460172
+s8
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Fase 2.LinkFileList
+c000000004E77968C000000000000014E
+t1316460172
+s334
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o
+t2
+s0
+
+N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o
+t2
+s0
+
+N/usr/include/stdio.h
+c000000004E05497C0000000000004763
+t1308969340
+s18275
+
+N/usr/include/stdlib.h
+c000000004E05497C00000000000030A7
+t1308969340
+s12455
+
+NFase 2-Info.plist
+c000000004E7656D9000000000000037F
+t1316378329
+s895
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies338152972#338152972#0(0"0(0#1#0"17207761664#0"0#
+
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o" "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s338152972.664710
+e338152972.826788
+r0
+xCompileC
+xbuild/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o
+x/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@119"Compile /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp338152972#338152972#0(492"In file included from /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp:13:/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.h:31: error: ISO C++ forbids declaration of 'Material' with no type/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp:16: error: ISO C++ forbids declaration of 'Material' with no type2(4@54"ISO C++ forbids declaration of 'Material' with no type338152972#137#175#2(7@133"In file included from /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp338152972#18446744073709551615#0#0(6@111"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp338072654#13#0#13#0#0"0(13@167"ISO C++ forbids declaration of 'Material' with no type in /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.h338152972#18446744073709551615#0#0(6@109"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.h338072648#31#0#31#0#0"0(6@109"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.h338072648#31#0#31#0#47"ISO C++ forbids declaration of '*' with no type0(4@54"ISO C++ forbids declaration of 'Material' with no type338152972#312#177#0(6@111"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp338072654#16#0#16#0#47"ISO C++ forbids declaration of '*' with no type0(0#0#111"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp4554215056#1862"    cd "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2"    setenv LANG en_US.US-ASCII    /Developer-old/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/include" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp" -o "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o"1#
+
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o" "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s338152972.607628
+e338152974.780866
+r0
+xCompileC
+xbuild/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o
+x/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.h:15,
+o                 from /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp:13:
+o/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.h:31: error: ISO C++ forbids declaration of 'Material' with no type
+o/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp: In member function 'Matarial Objeto::getMaterial()':
+o/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp:24: error: conversion from 'Matarial*' to non-scalar type 'Matarial' requested
+lSLF07#2@117"Compile /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp338152972#338152974#0(799"In file included from /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.h:15,                 from /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp:13:/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.h:31: error: ISO C++ forbids declaration of 'Material' with no type/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp: In member function 'Matarial Objeto::getMaterial()':/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp:24: error: conversion from 'Matarial*' to non-scalar type 'Matarial' requested2(4@54"ISO C++ forbids declaration of 'Material' with no type338152974#268#175#3(7@131"In file included from /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp338152974#18446744073709551615#0#0(6@109"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp338152972#13#0#13#0#0"0(7@129"In file included from /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.h338152974#18446744073709551615#0#0(6@107"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.h338073710#15#0#15#0#0"0(13@167"ISO C++ forbids declaration of 'Material' with no type in /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.h338152974#18446744073709551615#0#0(6@109"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.h338072648#31#0#31#0#0"0(6@109"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.h338072648#31#0#31#0#47"ISO C++ forbids declaration of '*' with no type0(4@67"Conversion from 'Matarial*' to non-scalar type 'Matarial' requested338152974#606#188#0(6@109"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp338152972#24#0#24#0#0"0(0#0#109"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp4554215056#1858"    cd "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2"    setenv LANG en_US.US-ASCII    /Developer-old/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/include" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp" -o "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o"1#
+
+CLd "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/MacOS/Fase 2" normal i386
+r0
+
+CProcessInfoPlistFile "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/Info.plist" "Fase 2-Info.plist"
+s338152972.558304
+e338152972.607563
+r1
+xProcessInfoPlistFile
+x/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/Info.plist
+xFase 2-Info.plist
+lSLF07#2@25"Process Fase 2-Info.plist338152972#338152972#0(0"0(0#0#116"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Fase 2-Info.plist17207813888#495"    cd "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2"    builtin-infoPlistUtility "Fase 2-Info.plist" -genpkginfo "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/Info.plist"0#
+
+CTouch "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app"
+r0
+
