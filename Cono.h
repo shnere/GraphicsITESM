@@ -1,14 +1,14 @@
 /*
- *  Esfera.h
+ *  Cono.h
  *  Fase 2
  *
- *  Created by Sergio Báez on 9/19/11.
+ *  Created by Sergio Báez on 10/6/11.
  *  Copyright 2011 ITESM-CQ. All rights reserved.
  *
  */
 
-#ifndef ESFERA_H_
-#define ESFERA_H_
+#ifndef CONO_H_
+#define CONO_H_
 
 #include <GLUT/GLUT.h>
 #include <stdio.h>
@@ -17,14 +17,14 @@
 #include "Matarial.h"
 using namespace std;
 
-class Esfera : public Objeto {
+class Cono : public Objeto {
 	private:
 		GLdouble radius;
+		GLdouble height;
 		GLint slices;
 		GLint stacks;
 	public:
-		Esfera(Matarial *imt, GLdouble sep_v[], int urep, GLdouble uradius, GLdouble uslices, GLdouble ustacks);
-		void render();
+		Cono(Matarial *imt, GLdouble sep_v[], int urep, GLdouble uradius, GLdouble uheight, GLint uslices, GLint ustacks);
 };
 
 #endif

@@ -1,27 +1,35 @@
 TFase 2
 v7
 r0
-t339468628.787837
+t339812809.550938
 cCheck dependencies
-cProcessInfoPlistFile "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/Info.plist" "Fase 2-Info.plist"
-cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o" "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o" "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Esfera.o" "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Esfera.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cProcessInfoPlistFile "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app/Contents/Info.plist" "Fase 2-Info.plist"
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Objeto.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Matarial.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Esfera.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Esfera.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Escena.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Cubo.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cubo.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Cono.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cono.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Toroide.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Toroide.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Prisma.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Prisma.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Movimientos.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Movimientos.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cLd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app/Contents/MacOS/Fase 2" normal i386
+cTouch "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app"
 
 N/System/Library/Frameworks/GLUT.framework/GLUT
-c000000004E27C97B0000000000105760
-t1311230331
-s1070944
+c000000004B5FAB1A00000000001A2920
+t1264560922
+s1714464
 
 N/System/Library/Frameworks/GLUT.framework/Headers/glut.h
-c000000004DFA9473000000000000578C
-t1308267635
+c000000004B489326000000000000578C
+t1263047462
 s22412
 
 N/System/Library/Frameworks/OpenGL.framework/OpenGL
-c000000004E27C8D6000000000002D2A0
-t1311230166
-s184992
+c000000004DF9F72F0000000000043360
+t1308227375
+s275296
 
 N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Esfera.cpp
 c000000004E8BA9D30000000000000208
@@ -113,24 +121,309 @@ N/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parc
 t1317775633
 s6592
 
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cono.cpp
+c000000004E8E50E300000000000001F7
+t1317949667
+s503
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+i"Cono.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cono.h
+c000000004E8E4B130000000000000212
+t1317948179
+s530
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cubo.cpp
+c000000004E8E49AE0000000000000182
+t1317947822
+s386
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+i"Cubo.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cubo.h
+c000000004E8E494D00000000000001AB
+t1317947725
+s427
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp
+c000000004E8E28F00000000000000998
+t1317939440
+s2456
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i<math.h>
+i"Objeto.h"
+i"Esfera.h"
+i"Matarial.h"
+i"Escena.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.h
+c000000004E8E27E10000000000000080
+t1317939169
+s128
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Esfera.cpp
+c000000004E90EA160000000000000396
+t1318119958
+s918
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Esfera.h"
+i"Objeto.h"
+i"Matarial.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Esfera.h
+c000000004E90EA44000000000000020E
+t1318120004
+s526
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Matarial.cpp
+c000000004E8C5B950000000000000338
+t1317821333
+s824
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Matarial.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Matarial.h
+c000000004E8C5B9500000000000002AC
+t1317821333
+s684
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Movimientos.cpp
+c000000004E8E88A70000000000001134
+t1317963943
+s4404
+i<GLUT/glut.h>
+i<math.h>
+i<stdio.h>
+i<stdlib.h>
+i<iostream>
+i"Movimientos.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Movimientos.h
+c000000004E8E88C30000000000000365
+t1317963971
+s869
+i<GLUT/glut.h>
+i<math.h>
+i<stdio.h>
+i<stdlib.h>
+i<iostream>
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Objeto.cpp
+c000000004E8DBFF700000000000002F1
+t1317912567
+s753
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Objeto.h
+c000000004E90EA3000000000000002F7
+t1318119984
+s759
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i<vector>
+i"Matarial.h"
+i"Movimientos.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Prisma.cpp
+c000000004E8E85B200000000000001DF
+t1317963186
+s479
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+i"Prisma.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Prisma.h
+c000000004E8E854A00000000000001FF
+t1317963082
+s511
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Toroide.cpp
+c000000004E8E5672000000000000021B
+t1317951090
+s539
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+i"Toroide.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Toroide.h
+c000000004E8E55FD0000000000000231
+t1317950973
+s561
+i<GLUT/GLUT.h>
+i<stdio.h>
+i<stdlib.h>
+i"Objeto.h"
+i"Matarial.h"
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app
+t1318120009
+s102
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app/Contents/Info.plist
+t1317821333
+s829
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app/Contents/MacOS/Fase 2
+t1318120009
+s45784
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app/Contents/PkgInfo
+t1317821333
+s8
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Cono.o
+t1318120007
+s55592
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Cubo.o
+t1318120007
+s55284
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Escena.o
+t1318120007
+s70240
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Esfera.o
+t1318120006
+s56756
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Fase 2.LinkFileList
+c000000004E90E7D900000000000004E7
+t1318119385
+s1255
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o
+t1317821333
+s5572
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Movimientos.o
+t1317963972
+s57372
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o
+t1318120006
+s62096
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Prisma.o
+t1318120008
+s55548
+
+N/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Toroide.o
+t1318120007
+s55664
+
+N/usr/include/math.h
+c000000004AC599B500000000000004F1
+t1254463925
+s1265
+
 N/usr/include/stdio.h
-c000000004E05497C0000000000004763
-t1308969340
-s18275
+c000000004AC59C820000000000004174
+t1254464642
+s16756
 
 N/usr/include/stdlib.h
-c000000004E05497C00000000000030A7
-t1308969340
-s12455
+c000000004AC59C820000000000002DF5
+t1254464642
+s11765
 
 NFase 2-Info.plist
-c000000004E7656D9000000000000037F
-t1316378329
+c000000004E8C5B95000000000000037F
+t1317821333
 s895
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies339468628#339468628#0(0"0(0#1#0"4571628864#0"0#
+lSLF07#2@18"Check dependencies339812806#339812806#0(0"0(0#1#0"8613127008#0"0#
+
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Cono.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cono.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s339812807.342325
+e339812807.832910
+r1
+xCompileC
+xbuild/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Cono.o
+x/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cono.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cono.cpp339812807#339812807#0(0"0(0#0#80"/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cono.cpp8613524128#1553"    cd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/include" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cono.cpp" -o "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Cono.o"0#
+
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Cubo.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cubo.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s339812806.675974
+e339812807.342220
+r1
+xCompileC
+xbuild/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Cubo.o
+x/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cubo.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cubo.cpp339812806#339812807#0(0"0(0#0#80"/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cubo.cpp8613181984#1553"    cd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/include" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Cubo.cpp" -o "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Cubo.o"0#
+
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Escena.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s339812806.621101
+e339812807.350035
+r1
+xCompileC
+xbuild/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Escena.o
+x/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp: In function 'int main(int, char**)':
+o/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp:101: warning: deprecated conversion from string constant to 'char*'
+lSLF07#2@90"Compile /Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp339812806#339812807#0(272"/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp: In function 'int main(int, char**)':/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp:101: warning: deprecated conversion from string constant to 'char*'1(22@53"Deprecated conversion from string constant to 'char*'339812807#121#151#0(6@82"/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp339632240#101#0#101#0#49"deprecated conversion from string constant to '*'0(0#0#82"/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp8613070400#1557"    cd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/include" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Escena.cpp" -o "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Escena.o"0#
 
 CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Esfera.o" "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Esfera.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 s339468628.786786
@@ -145,6 +438,19 @@ xc++
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@117"Compile /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Esfera.cpp339468628#339468628#0(741"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Esfera.cpp: In constructor 'Esfera::Esfera(Matarial*, GLdouble*, int, GLdouble, GLdouble, GLdouble)':/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Esfera.cpp:19: error: no matching function for call to 'Objeto::Objeto(Matarial&, GLdouble*&, int&)'/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.h:24: note: candidates are: Objeto::Objeto(Matarial*, GLdouble*, int)/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.h:18: note:                 Objeto::Objeto(const Objeto&)3(4@78"No matching function for call to 'Objeto::Objeto(Matarial&, GLdouble*&, int&)'339468628#200#199#0(6@109"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Esfera.cpp339468627#19#0#19#0#0"0(13@57"Candidates are: Objeto::Objeto(Matarial*, GLdouble*, int)339468628#399#175#0(6@107"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.h339468294#24#0#24#0#0"0(13@29"Objeto::Objeto(const Objeto&)339468628#574#163#0(6@107"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.h339468294#18#0#18#0#0"0(0#0#109"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Esfera.cpp4571627152#1858"    cd "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2"    setenv LANG en_US.US-ASCII    /Developer-old/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/include" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Esfera.cpp" -o "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Esfera.o"1#
 
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Esfera.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Esfera.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s339812806.133967
+e339812806.621000
+r1
+xCompileC
+xbuild/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Esfera.o
+x/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Esfera.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Esfera.cpp339812806#339812806#0(0"0(0#0#82"/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Esfera.cpp8613595072#1557"    cd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/include" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Esfera.cpp" -o "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Esfera.o"0#
+
 CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o" "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 s339468433.355827
 e339468433.568412
@@ -158,6 +464,12 @@ xc++
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@119"Compile /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp339468433#339468433#0(0"0(0#0#111"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp4610891408#1862"    cd "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2"    setenv LANG en_US.US-ASCII    /Developer-old/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/include" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Matarial.cpp" -o "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o"0#
 
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Matarial.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Matarial.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Movimientos.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Movimientos.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
 CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o" "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 s339468433.341814
 e339468433.592198
@@ -170,6 +482,45 @@ xi386
 xc++
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@117"Compile /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp339468433#339468433#0(0"0(0#0#109"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp4610891408#1858"    cd "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2"    setenv LANG en_US.US-ASCII    /Developer-old/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/include" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Objeto.cpp" -o "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o"0#
+
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Objeto.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s339812806.132964
+e339812806.675878
+r1
+xCompileC
+xbuild/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o
+x/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Objeto.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Objeto.cpp339812806#339812806#0(0"0(0#0#82"/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Objeto.cpp8612942496#1557"    cd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/include" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Objeto.cpp" -o "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Objeto.o"0#
+
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Prisma.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Prisma.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s339812807.827071
+e339812808.247436
+r1
+xCompileC
+xbuild/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Prisma.o
+x/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Prisma.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Prisma.cpp339812807#339812808#0(0"0(0#0#82"/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Prisma.cpp8599701184#1557"    cd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/include" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Prisma.cpp" -o "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Prisma.o"0#
+
+CCompileC "build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Toroide.o" "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Toroide.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s339812807.350140
+e339812807.826868
+r1
+xCompileC
+xbuild/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Toroide.o
+x/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Toroide.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Toroide.cpp339812807#339812807#0(0"0(0#0#83"/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Toroide.cpp8613214944#1559"    cd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-generated-files.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-own-target-headers.hmap" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-all-target-headers.hmap" -iquote "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Fase 2-project-headers.hmap" "-F/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/include" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources/i386" "-I/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/DerivedSources" -c "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/Toroide.cpp" -o "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Toroide.o"0#
 
 CLd "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/MacOS/Fase 2" normal i386
 s338154538.559471
@@ -186,6 +537,16 @@ old: symbol(s) not found
 ocollect2: ld returned 1 exit status
 lSLF07#2@148"Link /Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/MacOS/Fase 2338154538#338154538#0(134"Undefined symbols:  "_main", referenced from:      start in crt1.10.6.old: symbol(s) not foundcollect2: ld returned 1 exit status4(4@25""_main", referenced from:338154538#19#28#0(6@0"338154538#0#0#0#0#0"0(13@20"Start in crt1.10.6.o338154538#47#27#0(6@0"338154538#0#0#0#0#0"0(13@19"Symbol(s) not found338154538#74#24#0(6@0"338154538#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status338154538#98#36#0(6@0"338154538#0#0#0#0#0"0(0#0#0"4554751632#796"    cd "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2"    /Developer-old/usr/bin/g++-4.2 -arch i386 "-L/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug" "-F/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug" -filelist "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Fase 2.LinkFileList" -framework Foundation -framework AppKit -framework GLUT -framework OpenGL -o "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/MacOS/Fase 2"1#
 
+CLd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app/Contents/MacOS/Fase 2" normal i386
+s339812808.247525
+e339812809.528188
+r1
+xLd
+x/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app/Contents/MacOS/Fase 2
+xnormal
+xi386
+lSLF07#2@121"Link /Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app/Contents/MacOS/Fase 2339812808#339812809#0(0"0(0#0#0"8613123744#657"    cd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM"    /Developer/usr/bin/g++-4.2 -arch i386 "-L/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug" "-F/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug" -filelist "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Fase 2.build/Debug/Fase 2.build/Objects-normal/i386/Fase 2.LinkFileList" -framework Foundation -framework AppKit -framework GLUT -framework OpenGL -o "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app/Contents/MacOS/Fase 2"0#
+
 CProcessInfoPlistFile "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/Info.plist" "Fase 2-Info.plist"
 s338152972.558304
 e338152972.607563
@@ -195,6 +556,17 @@ x/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parc
 xFase 2-Info.plist
 lSLF07#2@25"Process Fase 2-Info.plist338152972#338152972#0(0"0(0#0#116"/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/Fase 2-Info.plist17207813888#495"    cd "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2"    builtin-infoPlistUtility "Fase 2-Info.plist" -genpkginfo "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app/Contents/Info.plist"0#
 
+CProcessInfoPlistFile "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app/Contents/Info.plist" "Fase 2-Info.plist"
+r0
+
 CTouch "/Users/sabs231/Documents/ITESM/7mo Semestre/Gráficas Computacionales/2do Parcial/Proyecto/Fase 2/build/Debug/Fase 2.app"
 r0
+
+CTouch "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app"
+s339812809.528314
+e339812809.550883
+r1
+xTouch
+x/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app
+lSLF07#2@100"Touch /Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app339812809#339812809#0(0"0(0#0#0"8613266784#200"    cd "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM"    /usr/bin/touch -c "/Users/shnere/Documents/TEC/7o Semestre/Graficas/Proyecto/GraphicsITESM/build/Debug/Fase 2.app"0#
 

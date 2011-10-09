@@ -12,7 +12,9 @@
 #include <GLUT/GLUT.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <vector>
 #include "Matarial.h"
+#include "Movimientos.h"
 using namespace std;
 
 class Objeto {
@@ -20,6 +22,7 @@ class Objeto {
 		Matarial *material;
 		GLdouble *separacion_v;
 		int repeticiones;
+		vector<Movimientos> mov;
 	public:
 		Objeto(Matarial *imt, GLdouble sep_v[], int rep);
 		Matarial getMaterial();
@@ -28,7 +31,7 @@ class Objeto {
 		void setMaterial(Matarial *imt);
 		void setSeparacion_v(GLdouble sep_v[]);
 		void setRepeticiones(int rep);
-		virtual void render();
+		//virtual void render();
 		// virtual void repiteObjeto();
 };
 

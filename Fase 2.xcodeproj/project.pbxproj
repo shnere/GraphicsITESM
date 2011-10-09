@@ -11,6 +11,12 @@
 		2251373414268E9200E2CC89 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251373314268E9200E2CC89 /* OpenGL.framework */; };
 		2251373914268EE000E2CC89 /* Objeto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2251373814268EE000E2CC89 /* Objeto.cpp */; };
 		22513753142690AF00E2CC89 /* Matarial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22513752142690AF00E2CC89 /* Matarial.cpp */; };
+		22C2A07A143E5F6100D4CC39 /* Escena.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C2A079143E5F6100D4CC39 /* Escena.cpp */; };
+		22C2A095143E7E6400D4CC39 /* Cubo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C2A094143E7E6400D4CC39 /* Cubo.cpp */; };
+		22C2A09A143E817D00D4CC39 /* Cono.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C2A099143E817D00D4CC39 /* Cono.cpp */; };
+		22C2A0A0143E8C1900D4CC39 /* Toroide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C2A09F143E8C1900D4CC39 /* Toroide.cpp */; };
+		22C2A0BC143EBB9600D4CC39 /* Prisma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C2A0BB143EBB9600D4CC39 /* Prisma.cpp */; };
+		22C2A0C1143EBE4700D4CC39 /* Movimientos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C2A0C0143EBE4700D4CC39 /* Movimientos.cpp */; };
 		22DC78BF1427D3D100CD355C /* Esfera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DC78BE1427D3D100CD355C /* Esfera.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +29,18 @@
 		2251373814268EE000E2CC89 /* Objeto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Objeto.cpp; sourceTree = "<group>"; };
 		22513751142690AF00E2CC89 /* Matarial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matarial.h; sourceTree = "<group>"; };
 		22513752142690AF00E2CC89 /* Matarial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matarial.cpp; sourceTree = "<group>"; };
+		22C2A078143E5F6100D4CC39 /* Escena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Escena.h; sourceTree = "<group>"; };
+		22C2A079143E5F6100D4CC39 /* Escena.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Escena.cpp; sourceTree = "<group>"; };
+		22C2A093143E7E6400D4CC39 /* Cubo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cubo.h; sourceTree = "<group>"; };
+		22C2A094143E7E6400D4CC39 /* Cubo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cubo.cpp; sourceTree = "<group>"; };
+		22C2A098143E817D00D4CC39 /* Cono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cono.h; sourceTree = "<group>"; };
+		22C2A099143E817D00D4CC39 /* Cono.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cono.cpp; sourceTree = "<group>"; };
+		22C2A09E143E8C1900D4CC39 /* Toroide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toroide.h; sourceTree = "<group>"; };
+		22C2A09F143E8C1900D4CC39 /* Toroide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Toroide.cpp; sourceTree = "<group>"; };
+		22C2A0BA143EBB9600D4CC39 /* Prisma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prisma.h; sourceTree = "<group>"; };
+		22C2A0BB143EBB9600D4CC39 /* Prisma.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Prisma.cpp; sourceTree = "<group>"; };
+		22C2A0BF143EBE4700D4CC39 /* Movimientos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movimientos.h; sourceTree = "<group>"; };
+		22C2A0C0143EBE4700D4CC39 /* Movimientos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Movimientos.cpp; sourceTree = "<group>"; };
 		22DC78BD1427D3D100CD355C /* Esfera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Esfera.h; sourceTree = "<group>"; };
 		22DC78BE1427D3D100CD355C /* Esfera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Esfera.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,8 +82,14 @@
 			isa = PBXGroup;
 			children = (
 				2251373714268EE000E2CC89 /* Objeto.h */,
+				22C2A078143E5F6100D4CC39 /* Escena.h */,
 				22513751142690AF00E2CC89 /* Matarial.h */,
+				22C2A0BF143EBE4700D4CC39 /* Movimientos.h */,
 				22DC78BD1427D3D100CD355C /* Esfera.h */,
+				22C2A093143E7E6400D4CC39 /* Cubo.h */,
+				22C2A098143E817D00D4CC39 /* Cono.h */,
+				22C2A09E143E8C1900D4CC39 /* Toroide.h */,
+				22C2A0BA143EBB9600D4CC39 /* Prisma.h */,
 			);
 			name = headers;
 			sourceTree = "<group>";
@@ -74,8 +98,14 @@
 			isa = PBXGroup;
 			children = (
 				2251373814268EE000E2CC89 /* Objeto.cpp */,
+				22C2A079143E5F6100D4CC39 /* Escena.cpp */,
 				22513752142690AF00E2CC89 /* Matarial.cpp */,
+				22C2A0C0143EBE4700D4CC39 /* Movimientos.cpp */,
 				22DC78BE1427D3D100CD355C /* Esfera.cpp */,
+				22C2A094143E7E6400D4CC39 /* Cubo.cpp */,
+				22C2A099143E817D00D4CC39 /* Cono.cpp */,
+				22C2A09F143E8C1900D4CC39 /* Toroide.cpp */,
+				22C2A0BB143EBB9600D4CC39 /* Prisma.cpp */,
 			);
 			name = Cpps;
 			sourceTree = "<group>";
@@ -107,7 +137,6 @@
 			isa = PBXProject;
 			buildConfigurationList = 2251370E14268E4D00E2CC89 /* Build configuration list for PBXProject "Fase 2" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				English,
@@ -143,6 +172,12 @@
 				2251373914268EE000E2CC89 /* Objeto.cpp in Sources */,
 				22513753142690AF00E2CC89 /* Matarial.cpp in Sources */,
 				22DC78BF1427D3D100CD355C /* Esfera.cpp in Sources */,
+				22C2A07A143E5F6100D4CC39 /* Escena.cpp in Sources */,
+				22C2A095143E7E6400D4CC39 /* Cubo.cpp in Sources */,
+				22C2A09A143E817D00D4CC39 /* Cono.cpp in Sources */,
+				22C2A0A0143E8C1900D4CC39 /* Toroide.cpp in Sources */,
+				22C2A0BC143EBB9600D4CC39 /* Prisma.cpp in Sources */,
+				22C2A0C1143EBE4700D4CC39 /* Movimientos.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +209,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = 4.2;
 				INFOPLIST_FILE = "Fase 2-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
