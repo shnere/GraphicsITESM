@@ -14,6 +14,10 @@
 #include <math.h>
 #include "Objeto.h"
 #include "Esfera.h"
+#include "Cono.h"
+#include "Cubo.h"
+#include "Prisma.h"
+#include "Toroide.h"
 #include "Matarial.h"
 #include "Escena.h"
 
@@ -40,10 +44,21 @@ int currHeight	= 100;
 bool pausa		= false;
 
 Matarial mat01(1.0,1.0,0.0,GL_LINE_LOOP, GL_FLAT);
+Matarial mat02(1.0,0.0,0.0,GL_LINE_LOOP, GL_SMOOTH);
+Matarial mat03(0.0,1.0,1.0,GL_TRIANGLE_FAN, GL_SMOOTH);
+Matarial mat04(0.0,1.0,0.0,GL_TRIANGLE_FAN, GL_FLAT);
+Matarial mat05(0.0,1.0,1.0,GL_LINE_STRIP, GL_SMOOTH);
 
 GLdouble separacionV01[] = {-1.0,0.0,0.0};
+GLdouble separacionV02[] = {0.0,1.0,0.0};
+GLdouble separacionV03[] = {1.0,1.0,0.0};
+GLdouble separacionV04[] = {1.0,2.0,0.0};
+GLdouble separacionV05[] = {2.0,1.0,0.0};
 
 Esfera	esfera01(&mat01,separacionV01, 1, 0.6,50,50);
+Toroide toroide02(&mat02,separacionV02, 1, 0.6, 1.0,20,20);
+Cono cono03(&mat03,separacionV03, 1, 1, 1, 20, 20);
+Prisma prisma04(&mat04,separacionV04, 1, 9, 1.0, 1.0);
 
 
 // Función Init
@@ -59,9 +74,6 @@ void init(int left,int top,int width,int height,char* title) {
 }
 
 
-
-
-
 // Función Render
 void render(){	
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -71,6 +83,9 @@ void render(){
 	
 	// Creacion de los objetos en Escena AQUI
 	esfera01.render();
+	toroide02.render();
+	cono03.render();
+	prisma04.render();
 	
 	glutSwapBuffers();	
 }
@@ -98,7 +113,7 @@ void redimensiona(int width,int height) {
 
 int main( int argc, char **argv) {
 	glutInit(&argc,argv);
-	init(100,100,800,600,"Proyecto Parcial 01");
+	init(100,100,800,600,"Proyecto Parcial 02");
 	glutDisplayFunc(render);
 	//glutIdleFunc(idle);
 	glutReshapeFunc(redimensiona);

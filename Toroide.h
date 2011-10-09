@@ -25,6 +25,7 @@ class Toroide : public Objeto {
 		GLint rings;
 	public:
 		Toroide(Matarial *imt, GLdouble sep_v[], int urep, GLdouble uinnerRadius, GLdouble uouterRadius, GLint usides, GLint urings);
+		void render();
 };
 
 #endif

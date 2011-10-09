@@ -24,7 +24,8 @@ class Prisma : public Objeto {
 		GLdouble apotema;
 	public:
 		Prisma(Matarial *imt, GLdouble sep_v[], int urep, GLint ulados, GLdouble ualtura, GLdouble uapotema);
-	
+		void render();
+		void poligono(GLint ilados, GLdouble iapotema, Matarial *imt);
 };
 
 #endif

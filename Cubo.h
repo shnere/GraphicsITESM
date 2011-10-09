@@ -22,6 +22,7 @@ class Cubo : public Objeto {
 		GLdouble lado;
 	public:
 		Cubo(Matarial *imt, GLdouble sep_v[], int urep, GLdouble ulado);
+		void render();
 };
 
 #endif

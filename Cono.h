@@ -25,6 +25,7 @@ class Cono : public Objeto {
 		GLint stacks;
 	public:
 		Cono(Matarial *imt, GLdouble sep_v[], int urep, GLdouble uradius, GLdouble uheight, GLint uslices, GLint ustacks);
+		void render();
 };
 
 #endif
