@@ -17,7 +17,24 @@ Matarial::Matarial(GLfloat r, GLfloat g, GLfloat b, int LMode, int SMode){
 	colorMaterial.r = r;
 	colorMaterial.g = g;
 	colorMaterial.b = b;
+	
+	/*
+		GL_TRIANGLES
+		GL_TRIANGLE_STRIP
+		GL_TRIANGLE_FAN
+	 
+		GL_LINE_LOOP
+		GL_LINE_STRIP
+		
+		GL_QUADS
+		GL_QUAD_STRIP
+	 
+		GL_POLYGON
+	 */
+	
 	LineMode		= LMode;
+	
+	// GL_FLAT o GL_SMOOTH
 	ShadeMode		= SMode;
 }
 

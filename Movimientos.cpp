@@ -87,16 +87,14 @@ void Movimientos::move(){
 void Movimientos::idle(){
 	if(contador_frames < framemax){
 		switch(movid){
-				//translacion //rotacion //escalamiento
+			//translacion //rotacion //escalamiento
 			case 0: case 1: case 2:
 				x += deltas[0];
 				y += deltas[1];
 				z += deltas[2];
 				break;
-				
-				//traslacion en circulo
+			//traslacion en circulo
 			case 3:
-				
 				if (deltas[2] == 0) {
 					x = r * (cos(alpha) - sin(alpha));
 					y = r * (cos(theta) + sin(theta));

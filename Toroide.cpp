@@ -26,6 +26,12 @@ Toroide::Toroide(Matarial *imt, GLdouble sep_v[], int urep, GLdouble uinnerRadiu
 void Toroide::render() {
 	glPushMatrix();
 	
+	// ITERATOR de Movimientos
+	vector<Movimientos>::iterator itr;
+	for(itr = mov.begin(); itr != mov.end(); itr++){
+		(*itr).move();
+	}	
+	
 	glShadeModel(material->getShadeMode());
 	Color color = material->getColor();
 	glColor3f(color.r, color.g, color.b);

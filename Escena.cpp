@@ -43,18 +43,20 @@ int currHeight	= 100;
 // Pausar o reproducir la animación
 bool pausa		= false;
 
+
 /*
  * Genero Matariales
  */
-Matarial mat01(1.0,1.0,0.0,GL_LINE_LOOP, GL_FLAT);
-Matarial mat02(1.0,0.0,0.0,GL_LINE_LOOP, GL_SMOOTH);
-Matarial mat03(0.0,1.0,1.0,GL_TRIANGLE_FAN, GL_SMOOTH);
-Matarial mat04(0.0,1.0,0.0,GL_TRIANGLE_FAN, GL_FLAT);
-Matarial mat05(0.0,1.0,1.0,GL_LINE_STRIP, GL_SMOOTH);
+
+Matarial mat01(1.0,1.0,0.0,GL_LINE_LOOP, GL_SMOOTH);
+Matarial mat02(1.0,0.0,0.0,GL_LINE_STRIP, GL_FLAT);
+Matarial mat03(0.5,1.0,0.5,GL_TRIANGLE_FAN, GL_SMOOTH);
+Matarial mat04(0.0,1.0,0.0,GL_POLYGON, GL_SMOOTH);
+Matarial mat05(1.0,0.0,1.0,GL_TRIANGLE_FAN, GL_SMOOTH);
 
 GLdouble separacionV01[] = {-1.0,0.0,0.0};
 GLdouble separacionV02[] = {0.0,1.0,0.0};
-GLdouble separacionV03[] = {1.0,1.0,0.0};
+GLdouble separacionV03[] = {1.0,1.0,1.0};
 GLdouble separacionV04[] = {1.0,2.0,0.0};
 GLdouble separacionV05[] = {2.0,1.0,0.0};
 
@@ -63,10 +65,11 @@ GLdouble separacionV05[] = {2.0,1.0,0.0};
  * Genero Objetos
  */
 
-Esfera	esfera01(&mat01,separacionV01, 1, 0.6,50,50);
-Toroide toroide02(&mat02,separacionV02, 1, 0.6, 1.0,20,20);
-Cono cono03(&mat03,separacionV03, 1, 1, 1, 20, 20);
-Prisma prisma04(&mat04,separacionV04, 1, 9, 1.0, 1.0);
+Esfera	esfera01(&mat01,separacionV01	, 1, 0.6, 50	,50);
+Toroide toroide02(&mat02,separacionV02	, 1, 0.6, 0.4	,20	,20);
+Cono	cono03(&mat03,separacionV03		, 1, 1	, 0.5	,20	,20);
+Prisma	prisma04(&mat04,separacionV04	, 1, 5	, 0.6	,0.5);
+Cubo	cubo05(&mat05,separacionV05		, 1, 0.2);
 
 
 // Función Init
@@ -87,27 +90,27 @@ void render(){
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
 	
-	// Aplicar Transformaciones AQUI
-	
-	// Creacion de los objetos en Escena AQUI
+	// Render de los objetos en Escena AQUI
 	esfera01.render();
 	toroide02.render();
 	cono03.render();
 	prisma04.render();
+	cubo05.render();
 	
 	glutSwapBuffers();	
 }
 
 void idle(void){
-	
 	// Control de Frames por Segundo
 	static long time = glutGet(GLUT_ELAPSED_TIME);
-	if ((!pausa) && ((glutGet(GLUT_ELAPSED_TIME)-time) > frametime)) {
+	if ((!pausa) && ((glutGet(GLUT_ELAPSED_TIME)-time) > frametime)){
 		glLoadIdentity();
+		
 		esfera01.idle();
 		toroide02.loop();
 		cono03.doubleloop();
 		prisma04.loop();
+		cubo05.loop();
 		
 		glutPostRedisplay();
 		time	=	glutGet(GLUT_ELAPSED_TIME);
@@ -166,27 +169,81 @@ void ilumina(){
 	
 }
 
+
+void keyboardSpec(int key,int x,int y){
+	switch(key){
+		case GLUT_KEY_UP:
+			yview+=dtran;
+			redimensiona(currWidth,currHeight);
+			break;
+		case GLUT_KEY_DOWN:
+			yview-=dtran;
+			redimensiona(currWidth,currHeight);
+			break;
+		case GLUT_KEY_HOME:
+			zview+=dtran;
+			redimensiona(currWidth,currHeight);
+			break;
+		case GLUT_KEY_END:
+			zview-=dtran;
+			redimensiona(currWidth,currHeight);
+			break;
+		case GLUT_KEY_LEFT:
+			xview-=dtran;
+			redimensiona(currWidth,currHeight);
+			break;
+		case GLUT_KEY_RIGHT:
+			xview+=dtran;
+			redimensiona(currWidth,currHeight);
+			break;
+	}
+}
+
+void keyboard(unsigned char key,int x,int y){
+	// Definir Acciones
+	switch (key) {
+		case 'p':case 'P':
+			// Pause
+			if (!pausa) {
+				pausa = true;
+			}
+			break;
+		case 'c':case 'C':
+			// Continue
+			if (pausa) {
+				pausa = false;
+			}
+			break;
+		case 27:
+			exit(0);
+			break;
+		default:
+			break;
+	}
+}
+
 int main( int argc, char **argv) {
 	glutInit(&argc,argv);
 	init(100,100,800,600,"Proyecto Parcial 02");
 	glutDisplayFunc(render);
 	glutIdleFunc(idle);
 	glutReshapeFunc(redimensiona);
-    //glutSpecialFunc(keyboardSpec);
-	//glutKeyboardFunc(keyboard);	
+    glutSpecialFunc(keyboardSpec);
+	glutKeyboardFunc(keyboard);	
 	ilumina();
 	
 	// Aqui defino Movimientos de objetos, etc
-	Movimientos mov01(0.0, 0, 0.50, 0.50 ,0.00,fps,10);
-	Movimientos mov02(0.0, 0, 0.05, 0.00 ,0.05,fps,15);
-	Movimientos mov03(0.0, 1, 0.05, 0.05 ,0.00,fps,20);
-	Movimientos mov04(0.0, 2, 0.03, 0.03 ,0.00,fps,25);
-	Movimientos mov05(0.5, 3, 0.00, 0.05 ,0.05,fps,30);
+	Movimientos mov01(0.0, 0, 0.005, 0.005 ,0.000,fps,10);
+	Movimientos mov02(0.0, 0, 0.005, 0.000 ,0.005,fps,10);
+	Movimientos mov03(0.0, 1, 0.105, 0.005 ,0.005,fps,50);
+	Movimientos mov04(0.0, 2, 0.003, 0.003 ,0.000,fps,10);
+	Movimientos mov05(0.2, 3, 0.000, 0.005 ,0.005,fps,10);
 	
 	esfera01.addMovimiento(&mov01);
 	toroide02.addMovimiento(&mov02);
 	cono03.addMovimiento(&mov03);
 	prisma04.addMovimiento(&mov04);
+	cubo05.addMovimiento(&mov05);
 	
 	glutMainLoop();
 	return 0;

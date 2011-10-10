@@ -53,6 +53,12 @@ void Prisma::poligono(GLint ilados, GLdouble iapotema, Matarial *imt) {
 void Prisma::render() {
 	glPushMatrix();
 	
+	// ITERATOR de Movimientos
+	vector<Movimientos>::iterator itr;
+	for(itr = mov.begin(); itr != mov.end(); itr++){
+		(*itr).move();
+	}	
+	
 	glShadeModel(material->getShadeMode());
 	Color color = material->getColor();
 	glColor3f(color.r, color.g, color.b);
@@ -63,12 +69,12 @@ void Prisma::render() {
 	GLfloat limite = (2*3.1416);
 	GLfloat x, y;
 	
-	if (material->getLineMode() == GL_LINE_LOOP || material->getLineMode() == GL_LINE_STRIP) {
+	
 		glPushMatrix();
 		poligono(lados, apotema, material);
 		glPopMatrix();
 		
-		glBegin(GL_LINE_LOOP);
+		glBegin(material->getLineMode());
 		while (angulo < limite) {
 			x = apotema * cos(angulo);
 			y = apotema * sin(angulo);
@@ -82,26 +88,6 @@ void Prisma::render() {
 		glTranslatef(0.0, 0.0, altura);
 		poligono(lados, apotema, material);
 		glPopMatrix();
-	} else if(material->getLineMode() == GL_TRIANGLE_FAN) {
-		glPushMatrix();
-		poligono(lados, apotema, material);
-		glPopMatrix();
-		
-		glBegin(GL_QUAD_STRIP);
-		while (angulo < limite) {
-			x = apotema * cos(angulo);
-			y = apotema * sin(angulo);
-			glVertex3f(x, y, 0.0);
-			glVertex3f(x, y, altura);
-			angulo += delta;
-		}
-		glEnd();
-		
-		glPushMatrix();
-		glTranslatef(0.0, 0.0, altura);
-		poligono(lados, apotema, material);
-		glPopMatrix();
-	}
 	
 	glPopMatrix();
 
