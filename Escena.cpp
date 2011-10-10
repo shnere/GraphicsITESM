@@ -37,6 +37,8 @@ GLfloat yrotview= 0.0;
 GLfloat zrotview= 0.0;
 // Deltas de traslacion y rotacion
 GLfloat dtran	= 0.1;
+GLfloat drtran	= 0.9;
+
 // Tamano de la pantalla
 int currWidth	= 100;
 int currHeight	= 100;
@@ -48,11 +50,11 @@ bool pausa		= false;
  * Genero Matariales
  */
 
-Matarial mat01(1.0,1.0,0.0,GL_LINE_LOOP, GL_SMOOTH);
-Matarial mat02(1.0,0.0,0.0,GL_LINE_STRIP, GL_FLAT);
-Matarial mat03(0.5,1.0,0.5,GL_TRIANGLE_FAN, GL_SMOOTH);
-Matarial mat04(0.0,1.0,0.0,GL_POLYGON, GL_SMOOTH);
-Matarial mat05(1.0,0.0,1.0,GL_TRIANGLE_FAN, GL_SMOOTH);
+Matarial mat01(1.0,1.0,0.0,GL_LINE_LOOP		, GL_SMOOTH);
+Matarial mat02(1.0,0.0,0.0,GL_LINE_STRIP	, GL_FLAT);
+Matarial mat03(0.5,1.0,0.5,GL_TRIANGLE_FAN	, GL_SMOOTH);
+Matarial mat04(0.0,1.0,0.0,GL_LINE_LOOP		, GL_SMOOTH);
+Matarial mat05(1.0,0.0,1.0,GL_TRIANGLE_FAN	, GL_SMOOTH);
 
 GLdouble separacionV01[] = {-1.0,0.0,0.0};
 GLdouble separacionV02[] = {0.0,1.0,0.0};
@@ -67,7 +69,7 @@ GLdouble separacionV05[] = {2.0,1.0,0.0};
 
 Esfera	esfera01(&mat01,separacionV01	, 1, 0.6, 50	,50);
 Toroide toroide02(&mat02,separacionV02	, 1, 0.6, 0.4	,20	,20);
-Cono	cono03(&mat03,separacionV03		, 1, 1	, 0.5	,20	,20);
+Cono	cono03(&mat03,separacionV03		, 1, 0.5, 1	,20	,20);
 Prisma	prisma04(&mat04,separacionV04	, 1, 5	, 0.6	,0.5);
 Cubo	cubo05(&mat05,separacionV05		, 1, 0.2);
 
@@ -79,6 +81,7 @@ void init(int left,int top,int width,int height,char* title) {
 	glutInitWindowSize(width,height);
 	glutCreateWindow(title);
 	glClearColor(1.0,1.0,1.0,1.0);
+	
 	// Guardo Tamaños Actuales
 	currWidth	= width;
 	currHeight	= height;
@@ -91,11 +94,15 @@ void render(){
 	glLoadIdentity();
 	
 	// Render de los objetos en Escena AQUI
+	/*
 	esfera01.render();
 	toroide02.render();
 	cono03.render();
-	prisma04.render();
+	
+	 
 	cubo05.render();
+	*/
+	prisma04.render();
 	
 	glutSwapBuffers();	
 }
@@ -106,11 +113,15 @@ void idle(void){
 	if ((!pausa) && ((glutGet(GLUT_ELAPSED_TIME)-time) > frametime)){
 		glLoadIdentity();
 		
+		/*
 		esfera01.idle();
 		toroide02.loop();
 		cono03.doubleloop();
-		prisma04.loop();
+		
 		cubo05.loop();
+		*/
+		prisma04.loop();
+		
 		
 		glutPostRedisplay();
 		time	=	glutGet(GLUT_ELAPSED_TIME);
@@ -214,6 +225,36 @@ void keyboard(unsigned char key,int x,int y){
 				pausa = false;
 			}
 			break;
+		case 'x':
+			// RotateX
+			xrotview += drtran;
+			redimensiona(currWidth,currHeight);
+			break;
+		case 'y':
+			// RotateY
+			yrotview += drtran;
+			redimensiona(currWidth,currHeight);
+			break;
+		case 'z':
+			// RotateZ
+			zrotview += drtran;
+			redimensiona(currWidth,currHeight);
+			break;
+		case 'X':
+			// RotateX
+			xrotview -= drtran;
+			redimensiona(currWidth,currHeight);
+			break;
+		case 'Y':
+			// RotateY
+			yrotview -= drtran;
+			redimensiona(currWidth,currHeight);
+			break;
+		case 'Z':
+			// RotateZ
+			zrotview -= drtran;
+			redimensiona(currWidth,currHeight);
+			break;
 		case 27:
 			exit(0);
 			break;
@@ -233,6 +274,7 @@ int main( int argc, char **argv) {
 	ilumina();
 	
 	// Aqui defino Movimientos de objetos, etc
+	/*
 	Movimientos mov01(0.0, 0, 0.005, 0.005 ,0.000,fps,10);
 	Movimientos mov02(0.0, 0, 0.005, 0.000 ,0.005,fps,10);
 	Movimientos mov03(0.0, 1, 0.105, 0.005 ,0.005,fps,50);
@@ -244,7 +286,7 @@ int main( int argc, char **argv) {
 	cono03.addMovimiento(&mov03);
 	prisma04.addMovimiento(&mov04);
 	cubo05.addMovimiento(&mov05);
-	
+	*/
 	glutMainLoop();
 	return 0;
 }

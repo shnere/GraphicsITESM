@@ -28,25 +28,14 @@ void Prisma::poligono(GLint ilados, GLdouble iapotema, Matarial *imt) {
 	GLfloat limite = (2*3.1416);
 	GLfloat x, y;
 	
-	if (material->getLineMode() == GL_LINE_LOOP || material->getLineMode() == GL_LINE_STRIP) {
-		glBegin(GL_LINE_LOOP); 
-		while (angulo < limite) {
-			x = iapotema * cos(angulo);
-			y = iapotema * sin(angulo);
-			glVertex3f(x, y,0.0);
-			angulo += delta;
-		}
-		glEnd();
-	} else if(material->getLineMode() == GL_TRIANGLE_FAN) {
-		glBegin(GL_TRIANGLE_FAN); 
-		while (angulo < limite) {
-			x = iapotema * cos(angulo);
-			y = iapotema * sin(angulo);
-			glVertex3f(x, y, 0.0);
-			angulo += delta;
-		}
-		glEnd();
+	glBegin(material->getLineMode()); 
+	while (angulo < limite) {
+		x = iapotema * cos(angulo);
+		y = iapotema * sin(angulo);
+		glVertex3f(x, y,0.0);
+		angulo += delta;
 	}
+	glEnd();
 	
 }
 
