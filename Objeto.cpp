@@ -12,6 +12,8 @@
 #include <stdlib.h>
 #include "Objeto.h"
 #include "Matarial.h"
+#include "Movimientos.h"
+
 using namespace std;
 
 Objeto::Objeto(Matarial *imt, GLdouble sep_v[], int rep) {
@@ -42,4 +44,32 @@ void Objeto::setSeparacion_v(GLdouble sep_v[]) {
 
 void Objeto::setRepeticiones(int rep) {
 	repeticiones = rep;
+}
+
+void Objeto::idle(){
+	// ITERATOR de IDLE
+	vector<Movimientos>::iterator itr;
+	for(itr = mov.begin(); itr != mov.end(); itr++){
+		(*itr).idle();
+	}
+}
+
+void Objeto::loop(){
+	// ITERATOR de IDLE
+	vector<Movimientos>::iterator itr;
+	for(itr = mov.begin(); itr != mov.end(); itr++){
+		(*itr).loop();
+	}
+}
+
+void Objeto::doubleloop(){
+	// ITERATOR de IDLE
+	vector<Movimientos>::iterator itr;
+	for(itr = mov.begin(); itr != mov.end(); itr++){
+		(*itr).doubleloop();
+	}
+}
+
+void Objeto::addMovimiento(Movimientos *Movimiento){
+	mov.push_back((*Movimiento));
 }

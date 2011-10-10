@@ -31,6 +31,11 @@ class Objeto {
 		void setMaterial(Matarial *imt);
 		void setSeparacion_v(GLdouble sep_v[]);
 		void setRepeticiones(int rep);
+		void addMovimiento(Movimientos *Movimiento);
+		void idle();
+		void loop();
+		void doubleloop();
+		
 		//virtual void render();
 		// virtual void repiteObjeto();
 };

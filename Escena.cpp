@@ -43,6 +43,9 @@ int currHeight	= 100;
 // Pausar o reproducir la animación
 bool pausa		= false;
 
+/*
+ * Genero Matariales
+ */
 Matarial mat01(1.0,1.0,0.0,GL_LINE_LOOP, GL_FLAT);
 Matarial mat02(1.0,0.0,0.0,GL_LINE_LOOP, GL_SMOOTH);
 Matarial mat03(0.0,1.0,1.0,GL_TRIANGLE_FAN, GL_SMOOTH);
@@ -54,6 +57,11 @@ GLdouble separacionV02[] = {0.0,1.0,0.0};
 GLdouble separacionV03[] = {1.0,1.0,0.0};
 GLdouble separacionV04[] = {1.0,2.0,0.0};
 GLdouble separacionV05[] = {2.0,1.0,0.0};
+
+
+/*
+ * Genero Objetos
+ */
 
 Esfera	esfera01(&mat01,separacionV01, 1, 0.6,50,50);
 Toroide toroide02(&mat02,separacionV02, 1, 0.6, 1.0,20,20);
@@ -90,6 +98,22 @@ void render(){
 	glutSwapBuffers();	
 }
 
+void idle(void){
+	
+	// Control de Frames por Segundo
+	static long time = glutGet(GLUT_ELAPSED_TIME);
+	if ((!pausa) && ((glutGet(GLUT_ELAPSED_TIME)-time) > frametime)) {
+		glLoadIdentity();
+		esfera01.idle();
+		toroide02.loop();
+		cono03.doubleloop();
+		prisma04.loop();
+		
+		glutPostRedisplay();
+		time	=	glutGet(GLUT_ELAPSED_TIME);
+	}
+	
+}
 
 void redimensiona(int width,int height) {
 	// Activa matriz de transformaciones para Projection (Camara)  
@@ -110,16 +134,59 @@ void redimensiona(int width,int height) {
 	currHeight	= height;
 }
 
+void ilumina(){
+	// Define los parámetros de intensidad y color de la luz
+	GLfloat glfLightAmbient[]	= {0.1,0.1,0.1,1.0}; 
+	GLfloat glfLightDiffuse[]	= {1.2,1.2,1.2,1.0}; 
+	GLfloat glfLightSpecular[]	= {0.9,0.9,0.9,1.0};
+	
+	// Define una fuente de luz direccional
+	GLfloat glfLightPosition[]	= {0.0,0.0,2.0,0.0};
+	
+	// Activa los parámetros definidos
+	glLightfv(GL_LIGHT0,GL_AMBIENT	,glfLightAmbient);
+	glLightfv(GL_LIGHT0,GL_DIFFUSE	,glfLightDiffuse);
+	glLightfv(GL_LIGHT0,GL_SPECULAR	,glfLightSpecular);
+	glLightfv(GL_LIGHT0,GL_POSITION	,glfLightPosition);
+	
+	// Habilita la iluminacion en general 
+	glEnable(GL_LIGHTING);
+	
+	// Habilita la fuente de luz definida, siendo la primera y unica es GL_LIGTH0
+	glEnable(GL_LIGHT0);
+	
+	// Determina el ocultamiento de las caras de los polígonos que no están de frente a la camara
+	glEnable(GL_CULL_FACE);
+	
+	// Selecciona el modo de sombreado
+	// Se selecciona por objeto
+	
+	// Para que nos respete el color
+	glEnable(GL_COLOR_MATERIAL);
+	
+}
 
 int main( int argc, char **argv) {
 	glutInit(&argc,argv);
 	init(100,100,800,600,"Proyecto Parcial 02");
 	glutDisplayFunc(render);
-	//glutIdleFunc(idle);
+	glutIdleFunc(idle);
 	glutReshapeFunc(redimensiona);
     //glutSpecialFunc(keyboardSpec);
 	//glutKeyboardFunc(keyboard);	
-	//ilumina();
+	ilumina();
+	
+	// Aqui defino Movimientos de objetos, etc
+	Movimientos mov01(0.0, 0, 0.50, 0.50 ,0.00,fps,10);
+	Movimientos mov02(0.0, 0, 0.05, 0.00 ,0.05,fps,15);
+	Movimientos mov03(0.0, 1, 0.05, 0.05 ,0.00,fps,20);
+	Movimientos mov04(0.0, 2, 0.03, 0.03 ,0.00,fps,25);
+	Movimientos mov05(0.5, 3, 0.00, 0.05 ,0.05,fps,30);
+	
+	esfera01.addMovimiento(&mov01);
+	toroide02.addMovimiento(&mov02);
+	cono03.addMovimiento(&mov03);
+	prisma04.addMovimiento(&mov04);
 	
 	glutMainLoop();
 	return 0;
