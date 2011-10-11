@@ -59,24 +59,24 @@ void Prisma::render() {
 	GLfloat x, y;
 	
 	
-		glPushMatrix();
-		poligono(lados, apotema, material);
-		glPopMatrix();
+	glPushMatrix();
+	poligono(lados, apotema, material);
+	glPopMatrix();
 		
-		glBegin(material->getLineMode());
-		while (angulo < limite) {
-			x = apotema * cos(angulo);
-			y = apotema * sin(angulo);
-			glVertex3f(x, y, 0.0);
-			glVertex3f(x, y, altura);
-			angulo += delta;
-		}
-		glEnd();
+	glBegin(material->getLineMode());
+	while (angulo < limite) {
+		x = apotema * cos(angulo);
+		y = apotema * sin(angulo);
+		glVertex3f(x, y, 0.0);
+		glVertex3f(x, y, altura);
+		angulo += delta;
+	}
+	glEnd();
 		
-		glPushMatrix();
-		glTranslatef(0.0, 0.0, altura);
-		poligono(lados, apotema, material);
-		glPopMatrix();
+	glPushMatrix();
+	glTranslatef(0.0, 0.0, altura);
+	poligono(lados, apotema, material);
+	glPopMatrix();
 	
 	glPopMatrix();
 

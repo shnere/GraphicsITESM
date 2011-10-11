@@ -2,7 +2,7 @@
  *  Escena.cpp
  *  Fase 2
  *
- *  Created by Sergio Báez on 10/6/11.
+ *  Created by Guillermo Hernandez / Sergio Baez / Fernando Romero / Alan Rodriguez on 10/10/11.
  *  Copyright 2011 ITESM-CQ. All rights reserved.
  *
  */
@@ -21,6 +21,10 @@
 #include "Matarial.h"
 #include "Escena.h"
 
+/*
+ * Genero Variables Globales
+ */
+
 // Frames por segundo
 int fps			= 30;
 // Duracion de un frame en milisegundos
@@ -37,14 +41,13 @@ GLfloat yrotview= 0.0;
 GLfloat zrotview= 0.0;
 // Deltas de traslacion y rotacion
 GLfloat dtran	= 0.1;
-GLfloat drtran	= 0.9;
+GLfloat drtran	= 5.0;
 
 // Tamano de la pantalla
 int currWidth	= 100;
 int currHeight	= 100;
 // Pausar o reproducir la animación
 bool pausa		= false;
-
 
 /*
  * Genero Matariales
@@ -56,31 +59,31 @@ Matarial mat03(0.5,1.0,0.5,GL_TRIANGLE_FAN	, GL_SMOOTH);
 Matarial mat04(0.0,1.0,0.0,GL_LINE_LOOP		, GL_SMOOTH);
 Matarial mat05(1.0,0.0,1.0,GL_TRIANGLE_FAN	, GL_SMOOTH);
 
-GLdouble separacionV01[] = {-1.0,0.0,0.0};
-GLdouble separacionV02[] = {0.0,1.0,0.0};
-GLdouble separacionV03[] = {1.0,1.0,1.0};
-GLdouble separacionV04[] = {1.0,2.0,0.0};
-GLdouble separacionV05[] = {2.0,1.0,0.0};
-
+GLdouble separacionV01[] = {0.0,0.0,0.0};
+GLdouble separacionV02[] = {1.0,1.0,1.0};
+GLdouble separacionV03[] = {-1.0,1.0,1.0};
+GLdouble separacionV04[] = {1.0,1.0,1.0};
+GLdouble separacionV05[] = {-1.0,1.0,1.0};
 
 /*
  * Genero Objetos
  */
 
+// Radious 
 Esfera	esfera01(&mat01,separacionV01	, 1, 0.6, 50	,50);
 Toroide toroide02(&mat02,separacionV02	, 1, 0.6, 0.4	,20	,20);
 Cono	cono03(&mat03,separacionV03		, 1, 0.5, 1	,20	,20);
 Prisma	prisma04(&mat04,separacionV04	, 1, 5	, 0.6	,0.5);
-Cubo	cubo05(&mat05,separacionV05		, 1, 0.2);
+Cubo	cubo05(&mat05,separacionV05		, 1, 1);
 
 
 // Función Init
 void init(int left,int top,int width,int height,char* title) {
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowPosition(left,top);
 	glutInitWindowSize(width,height);
 	glutCreateWindow(title);
-	glClearColor(1.0,1.0,1.0,1.0);
+	glClearColor(0.0,0.0,0.0,0.0);
 	
 	// Guardo Tamaños Actuales
 	currWidth	= width;
@@ -92,18 +95,23 @@ void init(int left,int top,int width,int height,char* title) {
 void render(){	
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
+
+	// Aqui es donde roto la camara
+	glRotatef(xrotview,1.0,0.0,0.0);
+	glRotatef(yrotview,0.0,1.0,0.0);
+	glRotatef(zrotview,0.0,0.0,1.0);
 	
-	// Render de los objetos en Escena AQUI
-	/*
+	// Aqui es donde habilito las texturas
+	
+	
+	// Aqui genero las geometrias de la escena (Renders Individuales)
 	esfera01.render();
 	toroide02.render();
 	cono03.render();
-	
-	 
+	prisma04.render();	 
 	cubo05.render();
-	*/
-	prisma04.render();
-	
+
+	// Cambio los buffers
 	glutSwapBuffers();	
 }
 
@@ -113,15 +121,18 @@ void idle(void){
 	if ((!pausa) && ((glutGet(GLUT_ELAPSED_TIME)-time) > frametime)){
 		glLoadIdentity();
 		
+		// Aqui es donde muevo la camara
+		glRotatef(xrotview,1.0,0.0,0.0);
+		glRotatef(yrotview,0.0,1.0,0.0);
+		glRotatef(zrotview,0.0,0.0,1.0);
+		
 		/*
 		esfera01.idle();
 		toroide02.loop();
 		cono03.doubleloop();
-		
-		cubo05.loop();
-		*/
 		prisma04.loop();
-		
+		cubo05.loop();
+		*/	
 		
 		glutPostRedisplay();
 		time	=	glutGet(GLUT_ELAPSED_TIME);
@@ -133,11 +144,9 @@ void redimensiona(int width,int height) {
 	// Activa matriz de transformaciones para Projection (Camara)  
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
+	
 	gluPerspective(fovy,(GLdouble)width/(GLdouble)height,1.0,20.0); 
 	glTranslatef(xview,yview,zview);
-	glRotatef(xrotview,1.0,0.0,0.0);
-	glRotatef(yrotview,0.0,1.0,0.0);
-	glRotatef(zrotview,0.0,0.0,1.0);
 	glViewport(0,0,width,height);
 	
 	// Activa matriz de transformaciones para Model-View
@@ -179,7 +188,6 @@ void ilumina(){
 	glEnable(GL_COLOR_MATERIAL);
 	
 }
-
 
 void keyboardSpec(int key,int x,int y){
 	switch(key){
@@ -228,32 +236,26 @@ void keyboard(unsigned char key,int x,int y){
 		case 'x':
 			// RotateX
 			xrotview += drtran;
-			redimensiona(currWidth,currHeight);
 			break;
 		case 'y':
 			// RotateY
 			yrotview += drtran;
-			redimensiona(currWidth,currHeight);
 			break;
 		case 'z':
 			// RotateZ
 			zrotview += drtran;
-			redimensiona(currWidth,currHeight);
 			break;
 		case 'X':
 			// RotateX
 			xrotview -= drtran;
-			redimensiona(currWidth,currHeight);
 			break;
 		case 'Y':
 			// RotateY
 			yrotview -= drtran;
-			redimensiona(currWidth,currHeight);
 			break;
 		case 'Z':
 			// RotateZ
 			zrotview -= drtran;
-			redimensiona(currWidth,currHeight);
 			break;
 		case 27:
 			exit(0);
@@ -265,7 +267,10 @@ void keyboard(unsigned char key,int x,int y){
 
 int main( int argc, char **argv) {
 	glutInit(&argc,argv);
-	init(100,100,800,600,"Proyecto Parcial 02");
+	init(100,100,800,400,"Proyecto Parcial 02");
+	// Aqui cargo las texturas
+	// TODO: cargaTexturas();
+	
 	glutDisplayFunc(render);
 	glutIdleFunc(idle);
 	glutReshapeFunc(redimensiona);
@@ -287,6 +292,22 @@ int main( int argc, char **argv) {
 	prisma04.addMovimiento(&mov04);
 	cubo05.addMovimiento(&mov05);
 	*/
+	
+	// TODO Registrar el menu (Si es necesario)
+	/*
+	glutCreateMenu(menu);
+	glutAddMenuEntry("Textura de cromo", 0);
+	glutAddMenuEntry("Textura de piedra", 1);
+	glutAddMenuEntry("Textura de bumpy", 2);
+	glutAddMenuEntry("Textura de agua", 3);
+	glutAddMenuEntry("Textura de moho", 4);
+	glutAddMenuEntry("Textura GL_OBJECT_LINEAR", 5);
+	glutAddMenuEntry("Textura GL_EYE_LINEAR", 6);
+	glutAddMenuEntry("Textura GL_SPHERE_MAP", 7);
+	glutAttachMenu(GLUT_RIGHT_BUTTON);
+	*/
+	
+	// Empiezo el Loop Infinito
 	glutMainLoop();
 	return 0;
 }

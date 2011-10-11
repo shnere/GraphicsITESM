@@ -31,9 +31,13 @@ void Esfera::render(){
 		(*itr).move();
 	}	
 	
+	// Aplico Shade Model
 	glShadeModel(material->getShadeMode());
+	// Aplico el Color del Elemento
 	Color color = material->getColor();
 	glColor3f(color.r, color.g, color.b);
+	
+	// Aplico la separación
 	glTranslatef(separacion_v[0], separacion_v[1], separacion_v[2]);
 	
 	if (material->getLineMode() == GL_LINE_LOOP || material->getLineMode() == GL_LINE_STRIP) {
